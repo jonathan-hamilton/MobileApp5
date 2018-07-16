@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.mobileapp_working.ClassActivity"
+    tools:showIn="@layout/activity_class">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/class_term_number"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:text="Term #" />
+
+            <TextView
+                android:id="@+id/class_start"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="-6dp"
+                android:layout_weight="1"
+                android:text="Start" />
+
+            <TextView
+                android:id="@+id/class_end"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="End" />
+
+            <TextView
+                android:id="@+id/class_status"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="14dp"
+                android:layout_weight="1"
+                android:text="Status" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/class_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp">
+
+
+    </ListView>
+
+    <!--<Button-->
+        <!--android:id="@+id/add_class"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--app:layout_constraintTop_toBottomOf="@id/class_listview"-->
+        <!--android:text="Add Class"-->
+        <!--android:onClick="openClassEditActivity"/>-->
+
+</android.support.constraint.ConstraintLayout>

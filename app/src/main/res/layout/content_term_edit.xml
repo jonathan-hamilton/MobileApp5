@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".TermEdit"
+    tools:showIn="@layout/activity_term_edit">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Term #:"
+            android:layout_width="50dp"
+            android:layout_height="40dp" />
+
+        <EditText
+            android:id="@+id/term_edit_number_edittext"
+            android:layout_width="400dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="12dp"
+            android:hint="Term Number"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Term Start:"
+            android:layout_width="50dp"
+            android:layout_height="40dp" />
+
+        <EditText
+            android:id="@+id/term_edit_start_edittext"
+            android:layout_width="400dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="12dp"
+            android:hint="MM-DD-YY"
+            android:inputType="date" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="Term End:"
+            android:layout_width="50dp"
+            android:layout_height="40dp" />
+
+        <EditText
+            android:id="@+id/term_edit_end_edittext"
+            android:layout_width="400dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="12dp"
+            android:hint="MM-DD-YY"
+            android:inputType="date" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/term_edit_open_class_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:onClick="openClassList"
+        android:text="Class List" />
+
+
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.mobileapp_working.ClassAdd"
+    tools:showIn="@layout/activity_class_add">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/class_add_term_number"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Term #" />
+
+            <EditText
+                android:id="@+id/class_add_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"
+                android:hint="Class Name"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/class_add_start"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"
+                android:hint="Start MM-DD-YY"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/class_add_end"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"
+                android:hint="End MM-DD-YY"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/class_add_status"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="8dp"
+                android:hint="Status"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/class_add_course_mentor_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:hint="Course Mentor name" />
+
+            <EditText
+                android:id="@+id/class_add_course_mentor_phone"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:hint="Course Mentor phone" />
+
+            <EditText
+                android:id="@+id/class_add_course_mentor_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:hint="Course Mentor email" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

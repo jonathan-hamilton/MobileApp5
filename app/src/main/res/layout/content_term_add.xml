@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.mobileapp_working.TermAdd"
+    tools:showIn="@layout/activity_term_add">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/term_number"
+                android:layout_width="400dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="12dp"
+                android:hint="Term Number"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/term_start"
+                android:layout_width="400dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="12dp"
+                android:hint="Term Start MM-DD-YY"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/term_end"
+                android:layout_width="400dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="12dp"
+                android:hint="Term End MM-DD-YY"
+                android:inputType="date" />
+
+        </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

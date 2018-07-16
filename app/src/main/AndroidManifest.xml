@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mobileapp_working">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TermAdd"
+            android:label="@string/title_activity_term_add"
+            android:parentActivityName=".TermList"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mobileapp_working.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ClassActivity"
+            android:label="@string/title_activity_class"
+            android:parentActivityName=".TermAdd"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mobileapp_working.TermAdd" />
+        </activity>
+        <activity
+            android:name=".ClassAdd"
+            android:label="@string/title_activity_class_edit"
+            android:parentActivityName=".ClassActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mobileapp_working.ClassActivity" />
+        </activity>
+        <activity
+            android:name=".ClassDetail"
+            android:label="@string/title_activity_class_detail"
+            android:parentActivityName=".ClassActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mobileapp_working.ClassActivity" />
+        </activity>
+        <activity
+            android:name=".NotesListActivity"
+            android:label="@string/title_activity_notes_list"
+            android:parentActivityName=".ClassDetail"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mobileapp_working.ClassActivity" />
+        </activity>
+        <activity
+            android:name=".AlertList"
+            android:label="@string/title_activity_alerts"
+            android:parentActivityName=".ClassDetail"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mobileapp_working.ClassActivity" />
+        </activity>
+        <activity
+            android:name=".NoteAdd"
+            android:label="@string/title_activity_note_detail"
+            android:parentActivityName=".NotesListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mobileapp_working.NotesListActivity" />
+        </activity>
+        <activity
+            android:name=".AlertAdd"
+            android:label="@string/title_activity_alert_detail"
+            android:parentActivityName=".AlertList"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mobileapp_working.AlertList" />
+        </activity>
+        <activity
+            android:name=".AssessmentSet"
+            android:label="@string/title_activity_set_assessment_date"
+            android:parentActivityName=".ClassDetail"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mobileapp_working.ClassDetail" />
+        </activity>
+        <activity
+            android:name=".NoteDetail"
+            android:label="@string/title_activity_note_detail"
+            android:parentActivityName=".NotesListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mobileapp_working.NotesListActivity" />
+        </activity>
+        <activity
+            android:name=".TermList"
+            android:label="@string/title_activity_term_list"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mobileapp_working.MainActivity" />
+        </activity>
+        <activity
+            android:name=".TermEdit"
+            android:label="@string/title_activity_term_edit"
+            android:parentActivityName=".TermList"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mobileapp_working.TermList" />
+        </activity>
+        <activity
+            android:name=".AssessmentEdit"
+            android:label="@string/title_activity_assessment_edit"
+            android:parentActivityName=".ClassDetail"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".AlertEdit"
+            android:label="@string/title_activity_alert_edit"
+            android:parentActivityName=".AlertList"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mobileapp_working.AlertList" />
+        </activity>
+        <activity
+            android:name=".ClassEdit"
+            android:label="@string/title_activity_class_edit"
+            android:parentActivityName=".ClassDetail"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.mobileapp_working.ClassDetail" />
+        </activity>
+        <activity android:name=".Alert" />
+    </application>
+
+</manifest>

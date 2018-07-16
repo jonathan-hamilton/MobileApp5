@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/term_number"
+            android:layout_width="10dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="Term number"
+            android:textSize="15dp"
+            tools:layout_editor_absoluteY="4dp" />
+
+        <TextView
+            android:id="@+id/class_start"
+            android:layout_width="10dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="Class start"
+            android:textSize="15dp"
+            tools:layout_editor_absoluteY="4dp" />
+
+        <TextView
+            android:id="@+id/class_end"
+            android:layout_width="10dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="Class end"
+            android:textSize="15dp"
+            tools:layout_editor_absoluteY="4dp" />
+
+        <TextView
+            android:id="@+id/class_status"
+            android:layout_width="10dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="Class status"
+            android:textSize="15dp"
+            tools:layout_editor_absoluteY="4dp" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/class_course_mentor"-->
+            <!--android:layout_width="10dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_marginLeft="8dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="Course Mentor"-->
+            <!--tools:layout_editor_absoluteY="4dp"-->
+            <!--android:textSize="10dp"/>-->
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

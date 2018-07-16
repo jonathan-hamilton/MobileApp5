@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.mobileapp_working.ClassDetail">
+
+    <item
+        android:id="@+id/class_detail_edit_menu"
+        android:orderInCategory="100"
+        android:title="Edit Class"
+        app:showAsAction="never"
+        android:onClick="openEditClass"
+        />
+
+    <item
+        android:id="@+id/actioclass_detail_delete_menu"
+        android:orderInCategory="200"
+        android:title="Delete Class"
+        app:showAsAction="never"
+    android:onClick="deleteClass"
+    />
+</menu>

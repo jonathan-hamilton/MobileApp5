@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.mobileapp_working.NoteAdd"
+    tools:showIn="@layout/activity_note_add">
+
+    <EditText
+        android:id="@+id/note_add_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ems="10"
+        android:hint="New note here..."
+        android:inputType="text"
+        android:textAlignment="viewStart"
+        android:gravity="start" />
+</android.support.constraint.ConstraintLayout>
